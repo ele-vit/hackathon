@@ -1,4 +1,4 @@
-# Gestión de Docker con Makefile
+# Despliegue
 
 Este proyecto utiliza Docker Compose para gestionar los contenedores. El `Makefile` proporciona una serie de comandos para facilitar la administración de los contenedores.
 
@@ -17,6 +17,6 @@ El `Makefile` incluye varios comandos para construir, iniciar, detener y gestion
 - **`back-reload`**: Detiene y elimina los contenedores, luego los vuelve a iniciar.
 
 
-
-
+# PROMPT
+https://chatgpt.com/share/75885899-f915-4d1e-a92c-9ef3230a7281
 
