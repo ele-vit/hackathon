@@ -1,6 +1,6 @@
 # Gestión de Docker con Makefile
 
-Este proyecto utiliza Docker y Docker Compose para gestionar los contenedores. El `Makefile` proporciona una serie de comandos para facilitar la administración de los contenedores y las imágenes.
+Este proyecto utiliza Docker Compose para gestionar los contenedores. El `Makefile` proporciona una serie de comandos para facilitar la administración de los contenedores.
 
 ## Estructura del Makefile
 
@@ -9,15 +9,12 @@ El `Makefile` incluye varios comandos para construir, iniciar, detener y gestion
 ### Comandos
 
 - **`back-build`**: Construye las imágenes de Docker.
-  
-  ```bash
-  make back-build
-  make back-up
-  make back-down
-  make back-migrate
-  make back-logs
-  make back-all
-  make back-reload
+- **`back-up`**: Inicia los contenedores en segundo plano.
+- **`back-down`**: Detiene y elimina los contenedores.
+- **`back-migrate`**: Ejecuta las migraciones de Alembic dentro del contenedor web.
+- **`back-logs`**: Muestra los logs de los contenedores en tiempo real.
+- **`back-all`**: Ejecuta los siguientes pasos en orden: construir imágenes, iniciar contenedores, ejecutar migraciones y mostrar logs.
+- **`back-reload`**: Detiene y elimina los contenedores, luego los vuelve a iniciar.
 
 
 
